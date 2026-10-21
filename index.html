@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b20">
+  <title>A Little Something for You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <section class="screen active" id="welcome">
+      <div class="moon" aria-hidden="true">☾</div>
+      <p class="eyebrow">A little something for you</p>
+      <h1>Hey, <span>you</span>… <span class="pink">♥</span></h1>
+      <p class="copy">There’s something I’ve been wanting to tell you.</p>
+      <button class="primary" data-go="letter">Open my little note <span>♡</span></button>
+      <p class="hint">Made with a little courage and a lot of heart.</p>
+    </section>
+
+    <section class="screen" id="letter">
+      <p class="eyebrow">From my heart</p>
+      <div class="letter-card">
+        <div class="big-heart">♡</div>
+        <p class="message">I don't know what the future holds, but I wanted you to know that you are special to me. ❤️</p>
+        <div class="line"></div>
+        <p class="small-message">I just wanted to be honest about how I feel. No pressure, no expectations—just something I wanted you to know.</p>
+      </div>
+      <button class="primary" data-go="question">One little question…</button>
+      <button class="text-button" data-go="welcome">Back</button>
+    </section>
+
+    <section class="screen" id="question">
+      <p class="eyebrow">So, here goes…</p>
+      <h2>Would you like to<br><span class="script pink">give us a chance?</span></h2>
+      <p class="copy">Whatever your answer is, I’ll respect it. 💗</p>
+      <div class="choices">
+        <button class="yes-button" id="yesBtn">YES ❤️</button>
+        <button class="no-button" id="noBtn">NO 🤍</button>
+      </div>
+      <p class="hint">It’s okay to choose what feels right for you.</p>
+      <button class="text-button" data-go="letter">Read my note again</button>
+    </section>
+
+    <section class="screen" id="yes">
+      <div class="celebration-heart">♥</div>
+      <p class="eyebrow">A moment I’ll remember</p>
+      <h2 class="script pink">You made me smile!</h2>
+      <p class="copy">Thank you for being open to it. Let’s take things one step at a time. ✨</p>
+      <p class="small-message">No rush—let’s talk and get to know each other better.</p>
+      <button class="primary" data-go="welcome">Replay our little moment ↻</button>
+    </section>
+
+    <section class="screen" id="no">
+      <div class="soft-heart">♡</div>
+      <p class="eyebrow">Thank you for being honest</p>
+      <h2 class="script">That’s okay.</h2>
+      <p class="copy">I respect your answer. I’m glad I could be honest with you, and I wish you happiness. 🤍</p>
+      <button class="primary" data-go="welcome">Back to the beginning</button>
+    </section>
+  </main>
+
+  <footer>Made with sincerity <span>♥</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
